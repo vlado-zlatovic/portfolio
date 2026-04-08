@@ -1,0 +1,186 @@
+.container-wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+
+.header-wrapper ul {
+  list-style: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+
+.header-wrapper ul li a {
+  text-decoration: none;
+  color: var(--white-clr);
+  transition: var(--default-transition);
+}
+
+.header-wrapper ul li a:hover {
+  color: var(--purple-clr);
+}
+
+
+.header-wrapper button {
+  cursor: pointer;
+  border: none;
+  border: 2px solid var(--white-clr);
+  background: var(--purple-clr);
+  color: var(--white-clr);
+  padding: .8rem 1.2rem;
+  font-size: 1.3rem;
+  border-radius: .6rem;
+  transition: var(--default-transition);
+}
+
+
+.header-wrapper button:hover {
+  background: var(--white-clr);
+  color: var(--purple-clr);
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--purple-clr);
+  font-weight: bold;
+  font-size: 2.2rem;
+  transition: var(--default-transition);
+}
+
+.logo a span {
+  color: var(--white-clr);
+}
+
+
+.logo a:hover {
+  color: var(--white-clr);
+}
+
+
+
+/* HAMBURGER MOBILE MENU */
+
+
+/* --- Hamburger Icon Styles --- */
+.hamburger {
+  display: none; /* Hidden by default on desktop */
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 100;
+}
+
+.bar {
+  display: block;
+  width: 34px;
+  height: 3px;
+  background-color: var(--white-clr);
+  transition: var(--default-transition);
+}
+
+
+.socials-container {
+  display: none;
+}
+
+.contact-btn,
+.logo-text {
+  display: none;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+   .hamburger {
+    display: flex; /* Show hamburger on mobile */
+  }
+
+  .logo a {
+    font-size: 1.8rem;
+  }
+
+  /* Animate hamburger to 'X' when active */
+  .hamburger.active .bar:nth-child(2) { opacity: 0; }
+  .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+  .header-wrapper nav {
+    position: fixed;
+    left: -100%; /* Hide off-screen */
+    top: 0;
+    flex-direction: column;
+    background-color: var(--lighter-black-clr);
+    width: 100%;
+    height: 100vh;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    z-index: 99;
+  }
+
+  .header-wrapper nav.active {
+    left: 0; /* Slide in */
+  }
+
+  .header-wrapper ul {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Hide the desktop button inside the menu or below it */
+  .header-wrapper button.nav-cta {
+    display: none; 
+  }
+
+
+  .socials-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
+
+  .socials-container img {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+ 
+  .logo-text {
+    display: block;
+    font-size: 1.8rem;
+    color: var(--purple-clr);
+    font-weight: bold;
+  }
+
+  .logo-text span {
+    color: var(--white-clr);
+  }
+
+  .contact-btn {
+    display: block;
+    background: var(--purple-clr);
+    border: 2px solid var(--white-clr);
+    padding: .8rem;
+  }
+
+
+
+}

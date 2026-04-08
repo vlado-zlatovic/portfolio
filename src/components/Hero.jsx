@@ -1,3 +1,6 @@
+import './Hero.css';
+
+
 function HeroSection() {
   
 
