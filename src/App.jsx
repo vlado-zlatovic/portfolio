@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import HeroSection from './components/Hero'
 import About from './components/About'
 import Certificates from './components/Certificates'
+import Footer from './components/Footer'
 
 function App() {
   
@@ -23,6 +24,7 @@ function App() {
         </div>
       </div>
      </main>
+     <Footer/>
     </>
   )
 }

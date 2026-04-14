@@ -46,7 +46,9 @@ main {
   animation: fadeIn 1s ease-in-out;
 }
 
-
+footer {
+  background: var(--lighter-black-clr);
+}
 
 
 
