@@ -1,0 +1,42 @@
+.certificates-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.certificates-wrapper p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+
+.certificates-catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 1rem;
+}
+
+.certificates-catalog img {
+  width: 100%;
+}
+
+
+
+
+
+@media (max-width: 768px) { 
+
+  .certificates-catalog {
+    grid-template-columns: 1fr 1fr;
+    gap: .6rem;
+  }
+
+
+
+
+}

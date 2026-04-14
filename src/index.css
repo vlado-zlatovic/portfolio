@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: 'MyCustomFont', Arial;
+  scroll-padding-top: 7rem;
 }
 
 :root {
@@ -33,11 +34,18 @@ header {
   padding: 1rem;
   background: var(--lighter-black-clr);
   animation: slideDown .8s ease-in-out;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
 
 }
 
 
-
+main {
+  animation: fadeIn 1s ease-in-out;
+}
 
 
 
@@ -51,10 +59,19 @@ header {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 10rem;
+  gap: 5.4rem;
 }
 
 
+
+h2 {
+  color: var(--purple-clr);
+  font-size: 2rem;
+}
+
+h2 span {
+  color: var(--white-clr);
+}
 
 
 

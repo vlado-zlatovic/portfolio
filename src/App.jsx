@@ -5,6 +5,8 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Navbar from './components/Navbar'
 import HeroSection from './components/Hero'
+import About from './components/About'
+import Certificates from './components/Certificates'
 
 function App() {
   
@@ -16,6 +18,8 @@ function App() {
       <div className="container-wrapper">
         <div className='main-container'>
           <HeroSection/>
+          <About/>
+          <Certificates/>
         </div>
       </div>
      </main>
