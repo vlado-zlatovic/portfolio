@@ -41,10 +41,10 @@ return (
           </ul>
           <button className='contact-btn' onClick={()=> setIsOpen(false)}>Contact Me</button>
           <div className='socials-container'>
-            <a href=""><img src="/src/assets/socials-icons/github-brands-solid-full.svg" alt="" /></a>
-            <a href=""><img src="/src/assets/socials-icons/instagram-brands-solid-full.svg" alt="" /></a>
-            <a href=""><img src="/src/assets/socials-icons/linkedin-brands-solid-full.svg" alt="" /></a>
-            <a href=""><img src="/src/assets/socials-icons/x-twitter-brands-solid-full.svg" alt="" /></a>
+            <a href=""><img src="/socials-icons/github-brands-solid-full.svg" alt="" /></a>
+            <a href=""><img src="/socials-icons/instagram-brands-solid-full.svg" alt="" /></a>
+            <a href=""><img src="/socials-icons/linkedin-brands-solid-full.svg" alt="" /></a>
+            <a href=""><img src="/socials-icons/x-twitter-brands-solid-full.svg" alt="" /></a>
           </div>
         </nav>
         <button className='nav-cta'>Contact Me</button>
