@@ -8,6 +8,7 @@ import HeroSection from './components/Hero'
 import About from './components/About'
 import Certificates from './components/Certificates'
 import Projects from './components/Projects'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <About/>
           <Certificates/>
           <Projects/>
+          <Contact/>
         </div>
       </div>
      </main>

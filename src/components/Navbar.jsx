@@ -37,14 +37,13 @@ return (
             <li><a href="#about-sec" onClick={()=> setIsOpen(false)}>About</a></li>
             <li><a href="#certificates-sec" onClick={()=> setIsOpen(false)}>Certificates</a></li>
             <li><a href="#projects-sec" onClick={()=> setIsOpen(false)}>Projects</a></li>
-            <li><a href="" onClick={()=> setIsOpen(false)}>Contact</a></li>
+            <li><a href="#contact-sec" onClick={()=> setIsOpen(false)}>Contact</a></li>
+            <li><a href="./CV-en.pdf" download={'CV-en.pdf'}>Download CV</a></li>
           </ul>
           <button className='contact-btn' onClick={()=> setIsOpen(false)}>Contact Me</button>
           <div className='socials-container'>
             <a href=""><img src="/socials-icons/github-brands-solid-full.svg" alt="" /></a>
-            <a href=""><img src="/socials-icons/instagram-brands-solid-full.svg" alt="" /></a>
             <a href=""><img src="/socials-icons/linkedin-brands-solid-full.svg" alt="" /></a>
-            <a href=""><img src="/socials-icons/x-twitter-brands-solid-full.svg" alt="" /></a>
           </div>
         </nav>
         <button className='nav-cta'>Contact Me</button>
