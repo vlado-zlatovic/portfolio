@@ -36,7 +36,7 @@ return (
             <li><a href="#" onClick={()=> setIsOpen(false)}>Home</a></li>
             <li><a href="#about-sec" onClick={()=> setIsOpen(false)}>About</a></li>
             <li><a href="#certificates-sec" onClick={()=> setIsOpen(false)}>Certificates</a></li>
-            <li><a href="" onClick={()=> setIsOpen(false)}>Projects</a></li>
+            <li><a href="#projects-sec" onClick={()=> setIsOpen(false)}>Projects</a></li>
             <li><a href="" onClick={()=> setIsOpen(false)}>Contact</a></li>
           </ul>
           <button className='contact-btn' onClick={()=> setIsOpen(false)}>Contact Me</button>
