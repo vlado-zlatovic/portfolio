@@ -38,15 +38,21 @@ return (
             <li><a href="#certificates-sec" onClick={()=> setIsOpen(false)}>Certificates</a></li>
             <li><a href="#projects-sec" onClick={()=> setIsOpen(false)}>Projects</a></li>
             <li><a href="#contact-sec" onClick={()=> setIsOpen(false)}>Contact</a></li>
-            <li><a href="./CV-en.pdf" download={'CV-en.pdf'}>Download CV</a></li>
+            <li><span className='cv-link'><a href="./CV-en.pdf" download={'CV-en.pdf'} style={{color: 'var(--purple-clr)'}}>Download CV</a></span></li>
           </ul>
-          <button className='contact-btn' onClick={()=> setIsOpen(false)}>Contact Me</button>
+          {/* Mobile Contact Button */}
+          <a href="#contact-sec" onClick={() => setIsOpen(false)} className='contact-btn mobile-btn'>
+              Contact Me
+            </a>
           <div className='socials-container'>
             <a href=""><img src="/socials-icons/github-brands-solid-full.svg" alt="" /></a>
             <a href=""><img src="/socials-icons/linkedin-brands-solid-full.svg" alt="" /></a>
           </div>
         </nav>
-        <button className='nav-cta'>Contact Me</button>
+      {/* Desktop Contact Button */}
+          <a href="#contact-sec" className='contact-btn desktop-btn'>
+            Contact Me
+          </a>
         </div>
     </div>
   </header>

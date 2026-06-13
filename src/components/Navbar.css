@@ -9,9 +9,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  padding: 1rem 2rem; /* Added padding so items aren't stuck to screen edges */
 }
-
 
 .header-wrapper ul {
   list-style: none;
@@ -33,9 +32,24 @@
 }
 
 
-.header-wrapper button {
+.cv-link-a {
+  color: var(--purple-clr);
+}
+
+.cv-link {
   cursor: pointer;
-  border: none;
+  border: 2px solid var(--purple-clr);
+  background: var(--white-clr);
+  color: var(--purple-clr);
+  padding: .8rem 1.2rem;
+  font-size: 1.3rem;
+  border-radius: .6rem;
+}
+
+/* --- Shared Contact Button Styles --- */
+.contact-btn {
+  text-decoration: none;
+  cursor: pointer;
   border: 2px solid var(--white-clr);
   background: var(--purple-clr);
   color: var(--white-clr);
@@ -43,12 +57,23 @@
   font-size: 1.3rem;
   border-radius: .6rem;
   transition: var(--default-transition);
+  display: inline-block; /* Ensures padding renders correctly on anchor tags */
 }
 
 
-.header-wrapper button:hover {
+
+.contact-btn:hover {
   background: var(--white-clr);
   color: var(--purple-clr);
+}
+
+/* --- Desktop vs Mobile Visibility --- */
+.desktop-btn {
+  display: inline-block; /* Show on desktop */
+}
+
+.mobile-btn {
+  display: none; /* Hide on desktop */
 }
 
 .logo a {
@@ -63,15 +88,9 @@
   color: var(--white-clr);
 }
 
-
 .logo a:hover {
   color: var(--white-clr);
 }
-
-
-
-/* HAMBURGER MOBILE MENU */
-
 
 /* --- Hamburger Icon Styles --- */
 .hamburger {
@@ -90,28 +109,32 @@
   transition: var(--default-transition);
 }
 
-
 .socials-container {
   display: none;
 }
 
-.contact-btn,
 .logo-text {
   display: none;
 }
 
 
-
-
-
+/* --- MEDIA QUERY FOR MOBILE --- */
 @media (max-width: 768px) {
-
-   .hamburger {
+  .hamburger {
     display: flex; /* Show hamburger on mobile */
   }
 
   .logo a {
     font-size: 1.8rem;
+  }
+
+  /* Toggle button visibility on Mobile */
+  .desktop-btn {
+    display: none; /* Hide desktop button on mobile view */
+  }
+
+  .mobile-btn {
+    display: block; /* Show inside the mobile slide-out menu */
   }
 
   /* Animate hamburger to 'X' when active */
@@ -131,7 +154,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem; /* Reduced gap slightly so elements fit better on small mobile screens */
     z-index: 99;
   }
 
@@ -144,19 +167,12 @@
     gap: 2rem;
   }
 
-  /* Hide the desktop button inside the menu or below it */
-  .header-wrapper button.nav-cta {
-    display: none; 
-  }
-
-
   .socials-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1.2rem;
   }
-
 
   .socials-container img {
     width: 2.6rem;
@@ -173,14 +189,4 @@
   .logo-text span {
     color: var(--white-clr);
   }
-
-  .contact-btn {
-    display: block;
-    background: var(--purple-clr);
-    border: 2px solid var(--white-clr);
-    padding: .8rem;
-  }
-
-
-
 }
