@@ -45,7 +45,7 @@ return (
               Contact Me
             </a>
           <div className='socials-container'>
-            <a href=""><img src="/socials-icons/github-brands-solid-full.svg" alt="" /></a>
+            <a href="https://github.com/vlado-zlatovic" target='_blank'><img src="/socials-icons/github-brands-solid-full.svg" alt="" /></a>
             <a href=""><img src="/socials-icons/linkedin-brands-solid-full.svg" alt="" /></a>
           </div>
         </nav>
