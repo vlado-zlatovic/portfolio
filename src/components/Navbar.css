@@ -36,6 +36,8 @@
   color: var(--purple-clr);
 }
 
+
+
 .cv-link {
   cursor: pointer;
   border: 2px solid var(--purple-clr);
@@ -44,7 +46,13 @@
   padding: .8rem 1.2rem;
   font-size: 1.3rem;
   border-radius: .6rem;
+  transition: var(--default-transition);
 }
+
+.cv-link:hover {
+  opacity: 0.8;
+}
+
 
 /* --- Shared Contact Button Styles --- */
 .contact-btn {
