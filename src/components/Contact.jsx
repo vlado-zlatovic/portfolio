@@ -16,7 +16,7 @@ function Contact() {
   <button type="submit">Send</button>
 </form>
 <div className='mail-container'>
-  <p>Or contact me via mail: <a href="mailto:zlatovicvlado99@gmail.com">zlatovicvlado99@gmail.com</a></p>
+  <p>Or contact me via email: <a href="mailto:zlatovicvlado99@gmail.com">zlatovicvlado99@gmail.com</a></p>
   <img src="./socials-icons/mail-icon.svg" alt="" />
 </div>
 

@@ -14,7 +14,7 @@ function HeroSection() {
         <div className="hero-wrapper">
           <img src="/anime-man-picture.webp" alt="guy coding" />
           <div className="hero-text">
-            <p>Hello, my name is <span>Vlado Zlatović</span> and I am <span>&lt;Front-End Web Developer /&gt;</span> <br />Always up for learning new tech, skills and exploring new things about Web. Passionate and dedicated Developer always open to new challenges daily.</p>
+            <p>Hello, my name is <span>Vlado Zlatović</span> and I am <span>&lt;Front-End Web Developer /&gt;</span> <br />Always up for learning new tech and skills, and exploring new things about the web. Passionate and dedicated developer, always open to new daily challenges.</p>
             <p>My Tech Skills:</p>
             <div className="tech-container">
               <img src="/tech-logos/html-logo.png" alt="html logo" />
