@@ -7,10 +7,50 @@ function Projects() {
         <h2>&lt;Pro<span>jects /&gt;</span></h2>
         <p>A collection of projects that I created using: HTML, CSS, JavaScript and React technologies.</p>    
 
+
         {/* SINGLE PROJECT 1 */}
         
         <div className='single-project-container'>
-          <h3>&lt;Project 1 /&gt; Nike Shoes</h3>
+          <h3>&lt;Project 1 /&gt; Nike Shoes v2</h3>
+          <div className='project-link-div'><img src="./live-link-circle.svg" alt="green circle" /><a href="https://nike-just-do-it-v-2.netlify.app/" target='_blank'>Link: https://nike-just-do-it-v-2.netlify.app/</a></div>
+          <div className='project-screenshots-container'>
+            <img src="./websites-screenshots/nike-v2-1.png" alt="nike website screenshot" />
+            <img src="./websites-screenshots/nike-v2-2.png" alt="nike website screenshot" />
+            <img src="./websites-screenshots/nike-v2-3.png" alt="nike website screenshot" />
+            <img src="./websites-screenshots/nike-v2-4.png" alt="nike website screenshot" />
+            <img src="./websites-screenshots/nike-v2-5.png" alt="nike website screenshot" />
+            <img src="./websites-screenshots/nike-v2-6.png" alt="nike website screenshot" />
+            <img src="./websites-screenshots/nike-v2-7.png" alt="nike website screenshot" />
+            <img src="./websites-screenshots/nike-v2-8.png" alt="nike website screenshot" />
+          </div>
+          <div className='explanation-container'>
+            <h3>Project Overview: Nike Web Concept:</h3>
+            <p>This project is a React-based e-commerce web application inspired by Nike. Designed as a Single Page Application (SPA), it delivers a seamless user experience using HTML5, CSS3, JavaScript (ES6+), and React.js.
+              <br />
+              The top navigation bar and footer remain persistent across the entire site, ensuring zero full-page reloads. When browsing between pages, only the central main layout container updates dynamically.
+               <br />
+                <br />
+                <h3>Key Technical Implementation</h3>
+                <br />
+              <ul>
+                <li><b>Single Page Routing (react-router-dom):</b> Client-side routing is managed through react-router-dom. The main navigation links conditionally swap views inside the primary layout container without interrupting the fixed headers or footers.</li>
+                <li><b>Dynamic Data Mapping using .map method:</b> The Products catalog renders shoe models dynamically from a JavaScript array of product objects. Using JavaScript's .map() method, the app iterates through the dataset and populates reusable shoe card components with distinct product data (images, model names, and pricing).</li>
+                <li><b>Modular UI Architecture:</b> Built with a component-driven structure, separating global layout containers (Navbar, Footer) from view-level components to maintain clean, scalable code..</li>
+              </ul>
+            </p>
+          </div>
+        </div>    
+
+
+
+
+
+
+
+        {/* SINGLE PROJECT 2 */}
+        
+        <div className='single-project-container'>
+          <h3>&lt;Project 2 /&gt; Nike Shoes</h3>
           <div className='project-link-div'><img src="./live-link-circle.svg" alt="green circle" /><a href="https://nike-just-do.netlify.app/" target='_blank'>Link: https://nike-just-do.netlify.app/</a></div>
           <div className='project-screenshots-container'>
             <img src="./websites-screenshots/nike-1.png" alt="nike website screenshot" />
@@ -37,10 +77,10 @@ function Projects() {
           </div>
         </div>    
 
-        {/* SINGLE PROJECT 2 */}
+        {/* SINGLE PROJECT 3 */}
         
         <div className='single-project-container'>
-          <h3>&lt;Project 2 /&gt; Gaming Gear V2</h3>
+          <h3>&lt;Project 3 /&gt; Gaming Gear V2</h3>
           <div className='project-link-div'><img src="./live-link-circle.svg" alt="green circle" /><a href="https://gaming-gear-website.netlify.app/" target='_blank'>Link: https://gaming-gear-v2.netlify.app/</a></div>
           <div className='project-screenshots-container'>
             <img src="./websites-screenshots/gg-website-screenshot-1.png" alt="gaming gear v2 website screenshot" />
@@ -64,10 +104,10 @@ function Projects() {
         </div>  
 
 
-        {/* SINGLE PROJECT 3 */}
+        {/* SINGLE PROJECT 4 */}
         
         <div className='single-project-container'>
-          <h3>&lt;Project 3 /&gt; Cars Website</h3>
+          <h3>&lt;Project 4 /&gt; Cars Website</h3>
           <div className='project-link-div'><img src="./live-link-circle.svg" alt="green circle" /><a href="https://cars-shop-website.netlify.app/" target='_blank'>Link: https://cars-shop-website.netlify.app/</a></div>
           <div className='project-screenshots-container'>
             <img src="./websites-screenshots/bac-1.png" alt="cars website screenshot" />
@@ -93,10 +133,10 @@ function Projects() {
         </div>  
 
 
-        {/* SINGLE PROJECT 4 */}
+        {/* SINGLE PROJECT 5 */}
         
         <div className='single-project-container'>
-          <h3>&lt;Project 4 /&gt; Electric Cars</h3>
+          <h3>&lt;Project 5 /&gt; Electric Cars</h3>
           <div className='project-link-div'><img src="./live-link-circle.svg" alt="green circle" /><a href="https://electric-cars-website.netlify.app/" target='_blank'>Link: https://electric-cars-website.netlify.app/</a></div>
           <div className='project-screenshots-container'>
             <img src="./websites-screenshots/ec-1.png" alt="electric cars website screenshot" />
