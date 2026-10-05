@@ -21,6 +21,7 @@ function HeroSection() {
               <img src="/tech-logos/css3-logo.png" alt="css logo" />
               <img src="/tech-logos/img_js.png" alt="javascript logo" />
               <img src="/tech-logos/react-logo.png" alt="react logo" />
+              <img src="/tech-logos/wordpress-logo.png" alt="wordpress logo" />
             </div>
           </div>
         </div>
