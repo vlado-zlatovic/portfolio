@@ -74,6 +74,10 @@
   }
 
 
+  .tech-container {
+  flex-wrap: wrap;
+}
+
   .tech-container img {
   width: 4rem;
   height: 4rem;
